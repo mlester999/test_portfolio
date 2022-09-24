@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/script.js" defer></script>
+    <title>Mark's Portfolio</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <nav class="container relative mx-auto p-6">
+      <!-- This is the Flex Container -->
+      <div class="flex items center justify-between space-x-20 my-6">
+        <!-- Menu Logo -->
+        <div class="z-30">
+          <a href="#home"
+            ><img class="w-48" src="./images/Marky_logo.png" alt="" id="logo"
+          /></a>
+        </div>
+
+        <!-- Menu Items -->
+        <div
+          class="hidden items-center space-x-10 uppercase text-grayishBlue md:flex"
+        >
+          <a
+            href="#hero"
+            class="tracking-widest hover:text-softRed transition duration-200"
+            >Home</a
+          >
+          <a
+            href="#features"
+            class="tracking-widest hover:text-softRed transition duration-200"
+            >About</a
+          >
+          <a
+            href="#services"
+            class="tracking-widest hover:text-softRed transition duration-200"
+            >Services</a
+          >
+          <a
+            href="#portfolio"
+            class="tracking-widest hover:text-softRed transition duration-200"
+            >Portfolio</a
+          >
+          <a
+            href="#contact"
+            class="tracking-widest hover:text-softRed transition duration-200"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Page Section -->
+    <section id="hero">
+      <!-- Container for Image and Contents -->
+      <div
+        class="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:mb-0"
+      >
+        <!-- Contents -->
+        <div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
+          <h1
+            class="text-3xl font-semibold text-center lg:text-6xl lg:text-left"
+          >
+            Hello, It's Mark.
+          </h1>
+          <p
+            class="max-w-md mx-auto text-lg text-justify text-gray-400 lg:text-2xl lg:text-left lg:mt-0 lg:mx-0"
+          >
+            Hi There! I'm Mark Lester T. Acak. A Full Stack Web Developer having
+            specialization in back end & front end development. I have Backend
+            Skills in PHP and NodeJS. I also have Frontend Skills in Javascript,
+            VueJS, CSS / SASS, Bootstrap & TailwindCSS.
+          </p>
+
+          <!-- Buttons Container -->
+          <div
+            class="flex items-center justify-center w-full space-x-4 lg:justify-start"
+          >
+            <a
+              href="https://github.com/mlester999"
+              class="p-4 text-sm font-semibold text-white bg-grayish rounded shadow-lg md:text-base hover:bg-white hover:text-grayish hover:ring-2 hover:ring-grayish transition duration-200"
+              >Visit my Github</a
+            >
+            <a
+              href="https://github.com/mlester999"
+              class="p-4 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+              >Visit my LinkedIn</a
+            >
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+          <div class="bg-hero"></div>
+          <img
+            src="./images/marky_pfp.png"
+            alt=""
+            class="relative z-10 mx-auto sm:w-10/12 lg:top-10 lg:w-auto xl:top-0 xl:w-10/12 overflow-x-visible"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Heading -->
+    <section id="features">
+      <div class="container mx-auto mt-16 px-6">
+        <h2 class="mb-6 text-4xl font-semibold text-center">About</h2>
+        <p class="max-w-md mx-auto text-center text-grayishBlue">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea labore quo
+          minima. Dolore reiciendis aspernatur officiis fuga minus optio!
+          Recusandae animi incidunt sint, praesentium odio tempora fugit sequi
+          magnam consequuntur?
+        </p>
+      </div>
+    </section>
+
+    <!-- About Tabs -->
+    <section id="tabs">
+      <!-- Tabs/Panels Container -->
+      <div class="container relative mx-auto my-6 mb-32 mt-12 px-6">
+        <div class="bg-tabs"></div>
+        <!-- Tabs Flex Container -->
+        <div
+          class="flex flex-col justify-center max-w-xl mx-auto mb-6 border-b md:space-x-10 md:flex-row"
+        >
+          <!-- First Tab -->
+          <div
+            class="flex justify-center text-center text-gray-600 border-b md:border-b-0 hover:text-softRed md:w-1/3 tab"
+            data-target="panel-1"
+          >
+            <div
+              class="py-5 border-b-4 border-softRed transition duration-300"
+              data-target="panel-1"
+            >
+              Simple Bookmarking
+            </div>
+          </div>
+
+          <!-- Second Tab -->
+          <div
+            class="flex justify-center text-center text-gray-600 border-b md:border-b-0 hover:text-softRed md:w-1/3 tab"
+            data-target="panel-2"
+          >
+            <div class="py-5 transition duration-300" data-target="panel-2">
+              Speedy Searching
+            </div>
+          </div>
+
+          <!-- Third Tab -->
+          <div
+            class="flex justify-center text-center text-gray-600 border-b md:border-b-0 hover:text-softRed md:w-1/3 tab"
+            data-target="panel-3"
+          >
+            <div class="py-5 transition duration-300" data-target="panel-3">
+              Easy Searching
+            </div>
+          </div>
+        </div>
+        <!-- Tab Panels -->
+        <div id="panels" class="container mx-auto">
+          <!-- Panel 1 -->
+          <div
+            class="flex flex-col py-5 md:flex-row md:space-x-7 panel panel-1"
+          >
+            <!-- Panel Image -->
+            <div class="flex justify-center md:w-1/2">
+              <img
+                src="./images/illustration-features-tab-1.svg"
+                alt=""
+                class="relative z-10"
+              />
+            </div>
+            <!-- Panel Content -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+              <h3
+                class="mt-32 text-3xl font-semibold text-center md:mt-0 md:text-left"
+              >
+                Bookmark in one click
+              </h3>
+              <p class="max-w-md text-center text-grayishBlue md:text-left">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem qui sit quisquam ullam similique aliquam.
+                Voluptates et reprehenderit, explicabo vero corporis non optio
+                sit necessitatibus culpa quisquam quis rerum laboriosam.
+              </p>
+              <div class="mx-auto md:mx-0">
+                <a
+                  href="https://github.com/mlester999"
+                  class="p-4 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+                  >More Info</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Panel 2 -->
+          <div
+            class="flex flex-col hidden py-5 md:flex-row md:space-x-7 panel panel-2"
+          >
+            <!-- Panel Image -->
+            <div class="flex justify-center md:w-1/2">
+              <img
+                src="./images/illustration-features-tab-2.svg"
+                alt=""
+                class="relative z-10"
+              />
+            </div>
+            <!-- Panel Content -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+              <h3
+                class="mt-14 text-3xl font-semibold text-center md:mt-0 md:text-left"
+              >
+                Intelligent Search
+              </h3>
+              <p class="max-w-md text-center text-grayishBlue md:text-left">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem qui sit quisquam ullam similique aliquam.
+                Voluptates et reprehenderit, explicabo vero corporis non optio
+                sit necessitatibus culpa quisquam quis rerum laboriosam.
+              </p>
+              <div class="mx-auto md:mx-0">
+                <a
+                  href="https://github.com/mlester999"
+                  class="p-4 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+                  >More Info</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Panel 3 -->
+          <div
+            class="flex flex-col hidden py-5 md:flex-row md:space-x-7 panel panel-3"
+          >
+            <!-- Panel Image -->
+            <div class="flex justify-center md:w-1/2">
+              <img
+                src="./images/illustration-features-tab-3.svg"
+                alt=""
+                class="relative z-10"
+              />
+            </div>
+            <!-- Panel Content -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+              <h3
+                class="mt-14 text-3xl font-semibold text-center md:mt-0 md:text-left"
+              >
+                Share your bookmarks
+              </h3>
+              <p class="max-w-md text-center text-grayishBlue md:text-left">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem qui sit quisquam ullam similique aliquam.
+                Voluptates et reprehenderit, explicabo vero corporis non optio
+                sit necessitatibus culpa quisquam quis rerum laboriosam.
+              </p>
+              <div class="mx-auto md:mx-0">
+                <a
+                  href="https://github.com/mlester999"
+                  class="p-4 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+                  >More Info</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container mx-auto px-6">
+        <h2 class="mb-6 text-3xl font-semibold text-center md:text-4xl">
+          Services I offer
+        </h2>
+        <p class="max-w-lg mx-auto text-center text-grayishBlue">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea dolor
+          saepe voluptates nisi eaque. Saepe maxime, dolore est qui ea
+          distinctio possimus unde voluptatibus officiis minima non libero
+          deleniti?
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Boxes -->
+    <section id="download-boxes" class="py-32">
+      <!-- Boxes Container -->
+      <div
+        class="relative flex flex-col items-center max-w-5xl mx-auto space-y-10 px-10 md:px-6 md:space-y-0 md:space-x-7 md:flex-row"
+      >
+        <!-- First Box -->
+        <div
+          class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg md:w-1/3"
+        >
+          <!-- Image -->
+          <div class="flex justify-center">
+            <img src="./images/html-logo.png" alt="" />
+          </div>
+          <!-- Text -->
+          <h5 class="pt-6 text-xl font-bold">HTML5</h5>
+          <p class="text-gray-400">Minimum Version 62</p>
+
+          <!-- Dots -->
+          <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+            <a
+              href="https://github.com/mlester999"
+              class="block w-full py-3 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+              >Add & Install Extension</a
+            >
+          </div>
+        </div>
+
+        <!-- Second Box -->
+        <div class="w-full md:w-1/3">
+          <div
+            class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg"
+          >
+            <!-- Image -->
+            <div class="flex justify-center">
+              <img src="./images/css-logo.png" alt="" />
+            </div>
+            <!-- Text -->
+            <h5 class="pt-6 text-xl font-bold">CSS</h5>
+            <p class="text-gray-400">Minimum Version 55</p>
+
+            <!-- Dots -->
+            <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+              <a
+                href="https://github.com/mlester999"
+                class="block w-full py-3 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+                >Add & Install Extension</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Box -->
+        <div class="w-full md:w-1/3">
+          <div
+            class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg"
+          >
+            <!-- Image -->
+            <div class="flex justify-center">
+              <img src="./images/js-logo.png" alt="" />
+            </div>
+            <!-- Text -->
+            <h5 class="pt-6 text-xl font-bold">Javascript</h5>
+            <p class="text-gray-400">Minimum Version 52</p>
+
+            <!-- Dots -->
+            <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+              <a
+                href="https://github.com/mlester999"
+                class="block w-full py-3 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+                >Add & Install Extension</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
